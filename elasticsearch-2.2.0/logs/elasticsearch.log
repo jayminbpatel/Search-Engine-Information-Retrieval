@@ -1,0 +1,50 @@
+[2016-03-05 09:38:53,533][INFO ][node                     ] [Viper] version[2.2.0], pid[38948], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 09:38:53,550][INFO ][node                     ] [Viper] initializing ...
+[2016-03-05 09:38:55,161][INFO ][plugins                  ] [Viper] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 09:38:55,292][INFO ][env                      ] [Viper] using [1] data paths, mounts [[OS (C:)]], net usable_space [344.2gb], net total_space [462.4gb], spins? [unknown], types [NTFS]
+[2016-03-05 09:38:55,292][INFO ][env                      ] [Viper] heap size [910.5mb], compressed ordinary object pointers [true]
+[2016-03-05 09:39:13,658][INFO ][node                     ] [Viper] initialized
+[2016-03-05 09:39:13,658][INFO ][node                     ] [Viper] starting ...
+[2016-03-05 09:39:15,142][INFO ][transport                ] [Viper] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-03-05 09:39:15,244][INFO ][discovery                ] [Viper] elasticsearch/JpvXByWpQpK-K38lVlasrg
+[2016-03-05 09:39:19,368][INFO ][cluster.service          ] [Viper] new_master {Viper}{JpvXByWpQpK-K38lVlasrg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 09:39:19,500][INFO ][http                     ] [Viper] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-03-05 09:39:19,500][INFO ][node                     ] [Viper] started
+[2016-03-05 09:39:19,569][INFO ][gateway                  ] [Viper] recovered [0] indices into cluster_state
+[2016-03-05 10:07:24,423][INFO ][cluster.metadata         ] [Viper] [.kibana] creating index, cause [api], templates [], shards [1]/[1], mappings [config]
+[2016-03-05 10:07:25,529][INFO ][cluster.routing.allocation] [Viper] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.kibana][0]] ...]).
+[2016-03-05 10:26:52,918][INFO ][bootstrap                ] running graceful exit on windows
+[2016-03-05 10:26:52,920][INFO ][node                     ] [Viper] stopping ...
+[2016-03-05 10:26:53,015][INFO ][node                     ] [Viper] stopped
+[2016-03-05 10:26:53,016][INFO ][node                     ] [Viper] closing ...
+[2016-03-05 10:26:53,039][INFO ][node                     ] [Viper] closed
+[2016-03-05 10:27:44,299][INFO ][node                     ] [Brain-Child] version[2.2.0], pid[12672], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 10:27:44,302][INFO ][node                     ] [Brain-Child] initializing ...
+[2016-03-05 10:27:45,173][INFO ][plugins                  ] [Brain-Child] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 10:27:45,299][INFO ][env                      ] [Brain-Child] using [1] data paths, mounts [[OS (C:)]], net usable_space [343.8gb], net total_space [462.4gb], spins? [unknown], types [NTFS]
+[2016-03-05 10:27:45,307][INFO ][env                      ] [Brain-Child] heap size [910.5mb], compressed ordinary object pointers [true]
+[2016-03-05 10:27:50,529][INFO ][node                     ] [Brain-Child] initialized
+[2016-03-05 10:27:50,531][INFO ][node                     ] [Brain-Child] starting ...
+[2016-03-05 10:27:50,870][INFO ][transport                ] [Brain-Child] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-03-05 10:27:50,896][INFO ][discovery                ] [Brain-Child] elasticsearch/wp_0pFo4RYu6EOHCOpl7mg
+[2016-03-05 10:27:55,032][INFO ][cluster.service          ] [Brain-Child] new_master {Brain-Child}{wp_0pFo4RYu6EOHCOpl7mg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 10:27:55,227][INFO ][gateway                  ] [Brain-Child] recovered [1] indices into cluster_state
+[2016-03-05 10:27:55,261][INFO ][http                     ] [Brain-Child] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-03-05 10:27:55,265][INFO ][node                     ] [Brain-Child] started
+[2016-03-05 10:27:55,861][INFO ][cluster.routing.allocation] [Brain-Child] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.kibana][0]] ...]).
+[2016-03-05 12:54:41,183][INFO ][cluster.service          ] [Brain-Child] added {{Zombie}{R7TmTQDqSUKGOX0NTtlhqg}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Zombie}{R7TmTQDqSUKGOX0NTtlhqg}{127.0.0.1}{127.0.0.1:9301}])
+[2016-03-05 12:54:42,354][INFO ][cluster.service          ] [Brain-Child] removed {{Zombie}{R7TmTQDqSUKGOX0NTtlhqg}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-node_failed({Zombie}{R7TmTQDqSUKGOX0NTtlhqg}{127.0.0.1}{127.0.0.1:9301}), reason transport disconnected
+[2016-03-05 12:54:42,355][INFO ][cluster.routing          ] [Brain-Child] delaying allocation for [1] unassigned shards, next check in [1m]
+[2016-03-05 13:02:10,949][INFO ][cluster.service          ] [Brain-Child] added {{Piotr Rasputin}{m4EHjoZrR8WMGrXubBa9Sg}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Piotr Rasputin}{m4EHjoZrR8WMGrXubBa9Sg}{127.0.0.1}{127.0.0.1:9301}])
+[2016-03-05 13:02:11,915][INFO ][cluster.service          ] [Brain-Child] removed {{Piotr Rasputin}{m4EHjoZrR8WMGrXubBa9Sg}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-node_failed({Piotr Rasputin}{m4EHjoZrR8WMGrXubBa9Sg}{127.0.0.1}{127.0.0.1:9301}), reason transport disconnected
+[2016-03-05 13:02:11,916][INFO ][cluster.routing          ] [Brain-Child] delaying allocation for [1] unassigned shards, next check in [1m]
+[2016-03-05 13:03:01,137][INFO ][cluster.service          ] [Brain-Child] added {{Buzz}{Q6D6C05xRSiCqNsjNj_P7g}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Buzz}{Q6D6C05xRSiCqNsjNj_P7g}{127.0.0.1}{127.0.0.1:9301}])
+[2016-03-05 13:03:02,259][INFO ][cluster.service          ] [Brain-Child] removed {{Buzz}{Q6D6C05xRSiCqNsjNj_P7g}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-node_failed({Buzz}{Q6D6C05xRSiCqNsjNj_P7g}{127.0.0.1}{127.0.0.1:9301}), reason transport disconnected
+[2016-03-05 13:05:59,430][INFO ][cluster.service          ] [Brain-Child] added {{Raymond Sikorsky}{MUYzLAheT4es4ZWE9lRDlA}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Raymond Sikorsky}{MUYzLAheT4es4ZWE9lRDlA}{127.0.0.1}{127.0.0.1:9301}])
+[2016-03-05 13:06:00,718][INFO ][cluster.service          ] [Brain-Child] removed {{Raymond Sikorsky}{MUYzLAheT4es4ZWE9lRDlA}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-node_failed({Raymond Sikorsky}{MUYzLAheT4es4ZWE9lRDlA}{127.0.0.1}{127.0.0.1:9301}), reason transport disconnected
+[2016-03-05 13:06:00,720][INFO ][cluster.routing          ] [Brain-Child] delaying allocation for [1] unassigned shards, next check in [1m]
+[2016-03-05 14:06:30,456][INFO ][bootstrap                ] running graceful exit on windows
+[2016-03-05 14:06:30,457][INFO ][node                     ] [Brain-Child] stopping ...
+[2016-03-05 14:06:31,032][INFO ][node                     ] [Brain-Child] stopped
+[2016-03-05 14:06:31,034][INFO ][node                     ] [Brain-Child] closing ...
+[2016-03-05 14:06:31,340][INFO ][node                     ] [Brain-Child] closed
