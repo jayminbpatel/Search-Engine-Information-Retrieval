@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/Jaymin/Downloads/CS454(Search Engine)/cs454-winter-2016-master/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jaymin/Downloads/CS454(Search Engine)/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jaymin/Downloads/tika-app-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jaymin/Downloads/gson-2.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
