@@ -1,0 +1,147 @@
+import edu.csula.cs454.es.models.Product;
+import org.elasticsearch.client.Client;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.node.Node;
+
+import com.google.common.collect.Maps;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
+
+/**
+ * Elastic Search in class quiz:
+ *
+ * Please parse the csv files and search according to parsed data.
+ */
+public class HomeDepotSearch {
+    // use Optional to avoid null
+    private final Optional<Node> node;
+    private final Optional<Client> client;
+
+    private final Map<Long, Product> data;
+    private final boolean forTesting;
+
+    // default controller for searching on actual use case
+    public HomeDepotSearch() {
+        this.node = Optional.of(nodeBuilder().settings(Settings.builder()
+                .put("path.home", "F:\\CS454-Python\\elasticsearch-2.2.0\\bin")).node());
+        this.client = Optional.of(this.node.get().client());
+        this.data = Maps.newHashMap();
+        this.forTesting = false;
+    }
+
+    // mock data for test
+    public HomeDepotSearch(boolean forTesting) {
+        this.node = Optional.empty();
+        this.client = Optional.empty();
+        this.data = Maps.newHashMap();
+        this.forTesting = false;
+    }
+
+    // just to terminate node
+    public void shutdown() {
+        if (this.node.isPresent()) {
+            this.node.get().close();
+        }
+    } 
+
+    /**
+     * Parse the csv file and feed data either into data or elastic search
+     */
+    public void parseData(File descriptionCsvFile, File attributeCsvFile) {
+    	
+    	File pd = descriptionCsvFile;
+    	File att = attributeCsvFile;
+
+    	BufferedReader br = null;
+    	String line = "";
+    	
+		Map<String, String> maps = new HashMap<String, String>();
+		Map<String, String> maps2 = new HashMap<String, String>();
+
+    	try {
+
+
+    		br = new BufferedReader(new FileReader(pd));
+    		while ((line = br.readLine()) != null) {
+    			// use comma as separator
+    			String[] description = line.split(",");
+    			maps.put(description[0], description[1]);
+    		}
+
+    		//loop map
+    		for (Map.Entry<String, String> entry : maps.entrySet()) {
+    			System.out.println("Product [id= " + entry.getKey() + " , description="
+    				+ entry.getValue() + "]");
+    		}
+    		
+    		br= null;
+    		br = new BufferedReader(new FileReader(att));
+    		while ((line = br.readLine()) != null) {
+    			// use comma as separator
+    			String[] attr = line.split(",");
+    			maps.put(attr[1], attr[2]);
+    		}
+
+    		//loop map
+    		for (Map.Entry<String, String> entry : maps2.entrySet()) {
+    			System.out.println("Product [id= " + entry.getKey() + " , description="
+    				+ entry.getValue() + "]");
+
+    		}
+
+    	} catch (FileNotFoundException e) {
+    		//e.printStackTrace();
+    	} catch (IOException e) {
+    		//e.printStackTrace();
+    	} finally {
+    		if (br != null) {
+    			try {
+    				br.close();
+    			} catch (IOException e) {
+    				//e.printStackTrace();
+    			}
+    		}
+    	}
+
+    	System.out.println("Done");
+
+      
+        if (forTesting) {
+            // TODO: feed data into `data`
+        	
+        	//List<Product> products = new ArrayList<Product>();
+        	//products.add(new Product(,map2))
+        	
+        	
+        } else {
+            // TODO: feed data into Elastic Search using `client`
+        	
+        }
+    }
+
+    /**
+     * Search product by id
+     */
+    public Product search(long id) {
+        // TODO: return product by its id
+        return null;
+    }
+
+    /**
+     * Full text product search
+     */
+    public List<Product> search(String text) {
+        return null;
+    }
+}

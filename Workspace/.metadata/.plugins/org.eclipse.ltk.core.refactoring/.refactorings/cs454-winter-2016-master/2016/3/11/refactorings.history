@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;cs454-winter-2016-master&apos;&#x0D;&#x0A;- Original project: &apos;cs454-winter-2016-master&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     attributes.csv&#x0D;&#x0A;     product_descriptions.csv" description="Delete elements" element1="src/test/resources/product_descriptions.csv" element2="src/test/resources/attributes.csv" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1457820719740" subPackages="false" version="1.0"/>
+</session>
